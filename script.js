@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const diceContainer = document.getElementById('diceContainer');
     const rollButton = document.getElementById('rollButton');
+    const diceCountInput = document.getElementById('diceCount');
 
     function createDice(value) {
         const dice = document.createElement('div');
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayDice() {
         diceContainer.innerHTML = '';
-        const numDice = 2; // You can change this to display more dice
+        const numDice = parseInt(diceCountInput.value);
         for (let i = 0; i < numDice; i++) {
             const value = rollDice();
             const dice = createDice(value);
@@ -24,4 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     rollButton.addEventListener('click', displayDice);
+
+    // Initial display
+    displayDice();
 });

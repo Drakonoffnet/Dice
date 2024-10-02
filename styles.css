@@ -1,39 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-.container {
-    text-align: center;
-}
-
-.dice-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    background-color: #f8f9fa;
 }
 
 .dice {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid #007bff;
     border-radius: 10px;
-    margin: 0 10px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
+    color: #007bff;
 }
